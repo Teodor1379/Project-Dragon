@@ -29,5 +29,5 @@ IdentificationNumberContainer::IdentificationNumberContainer() {
     this->table["Хасково"]          = { 844,    871 };
     this->table["Шумен"]            = { 872,    903 };
     this->table["Ямбол"]            = { 904,    925 };
-    this->table["Неизвестен"]       = { 926,    999};
+    this->table["Неизвестен"]       = { 926,    999 };
 }
