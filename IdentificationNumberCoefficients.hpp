@@ -15,7 +15,7 @@ public:
 
 
 private:
-    std::unordered_map<std::uint8_t, std::uint8_t> pairs;
+    std::unordered_map<std::uint16_t, std::uint16_t> pairs;
 };
 
 
