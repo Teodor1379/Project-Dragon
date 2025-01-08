@@ -11,7 +11,7 @@
 
 
 
-typedef std::pair<std::uint8_t, std::uint8_t> Pair;
+typedef std::pair<std::uint16_t, std::uint16_t> Pair;
 
 
 
