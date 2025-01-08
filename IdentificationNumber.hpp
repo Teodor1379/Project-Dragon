@@ -1,7 +1,11 @@
 #ifndef IDENTIFICATION_NUMBER_HPP_INCLUDED
 #define IDENTIFICATION_NUMBER_HPP_INCLUDED
 
+
+
 #include <cstdint>
+
+
 
 class IdentificationNumber {
 public:
@@ -16,6 +20,11 @@ public:
     inline std::uint8_t getBirthLocationLowerBorder()   const noexcept  { return this->birthLocationLowerBorder; }
     inline std::uint8_t getBirthLocationUpperBorder()   const noexcept  { return this->birthLocationUpperBorder; }
 
+    void buildYearDigits()  ;
+    void buildMonthDigits() ;
+    void buildDayDigits()   ;
+
+
 private:
     bool gender;
 
@@ -26,5 +35,7 @@ private:
     std::uint8_t birthLocationLowerBorder;
     std::uint8_t birthLocationUpperBorder;
 };
+
+
 
 #endif
