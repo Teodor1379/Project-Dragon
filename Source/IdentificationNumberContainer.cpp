@@ -1,5 +1,6 @@
 #include "IdentificationNumberContainer.hpp"
 
+
 IdentificationNumberContainer::IdentificationNumberContainer() {
     this->table["Благоевград"]      = { 0,      43  };
     this->table["Бургас"]           = { 44,     93  };
