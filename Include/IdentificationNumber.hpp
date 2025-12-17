@@ -5,6 +5,9 @@
 
 #include <cstdint>
 
+
+#include <array>
+#include <string>
 #include <vector>
 
 
@@ -58,7 +61,23 @@ private:
 private:
     std::uint8_t locLowerLimit;
     std::uint8_t locUpperLimit;
+
+
+
+private:
+    std::array<std::uint8_t, 6> prefix;
+    std::array<std::uint8_t, 6> suffix;
+
+
+
+private:
+    std::vector<std::string> options;
 };
+
+
+
+bool operator==(const IdentificationNumber&, const IdentificationNumber&);
+bool operator!=(const IdentificationNumber&, const IdentificationNumber&);
 
 
 
