@@ -1,5 +1,5 @@
-#ifndef _IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED_
-#define _IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED_
+#ifndef _ID_COEFFICIENTS_HEADER_INCLUDED_
+#define _ID_COEFFICIENTS_HEADER_INCLUDED_
 
 
 
@@ -12,9 +12,9 @@
 
 
 
-class IdentificationNumberCoefficients {
+class IDCoefficients {
 public:
-    IdentificationNumberCoefficients();
+    IDCoefficients();
 
 
 
