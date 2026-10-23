@@ -1,11 +1,14 @@
-#ifndef IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED
-#define IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED
+#ifndef _IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED_
+#define _IDENTIFICATION_NUMBER_COEFFICIENTS_HEADER_INCLUDED_
 
 
 
+#include <cstddef>
 #include <cstdint>
+#include <cstdlib>
 
-#include <unordered_map>
+
+#include <array>
 
 
 
@@ -14,8 +17,23 @@ public:
     IdentificationNumberCoefficients();
 
 
+
+public:
+    inline std::uint16_t getNumb(std::uint16_t index)   const noexcept  { return this->pairs1[index];   } 
+    inline std::uint16_t getCoef(std::uint16_t index)   const noexcept  { return this->pairs2[index];   }
+
+
+
+
 private:
-    std::unordered_map<std::uint16_t, std::uint16_t> pairs;
+    void buildPairs1();
+    void buildPairs2();
+
+
+
+private:
+    std::array<std::uint16_t, 9> pairs1;
+    std::array<std::uint16_t, 9> pairs2;
 };
 
 
