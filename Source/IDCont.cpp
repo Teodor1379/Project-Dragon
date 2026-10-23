@@ -1,8 +1,8 @@
-#include "IdentificationNumberContainer.hpp"
+#include "IDCont.hpp"
 
 
 
-IdentificationNumberContainer::IdentificationNumberContainer() {
+IDContainer::IDContainer() {
     this->table["Благоевград"   ]   = {   0,     43 };
     this->table["Бургас"        ]   = {  44,     93 };
     this->table["Варна"         ]   = {  94,    139 };
