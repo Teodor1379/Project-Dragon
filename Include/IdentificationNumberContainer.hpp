@@ -27,13 +27,13 @@ public:
 
 
 public:
-    static inline std::uint16_t getLowerLimit(const std::string& place) noexcept  { return IdentificationNumberContainer::table.at(place)[0]; }
-    static inline std::uint16_t getUpperLimit(const std::string& place) noexcept  { return IdentificationNumberContainer::table.at(place)[1]; }
+    inline std::uint16_t getLowerLimit(const std::string& place)    const noexcept  { return this->table.at(place)[0]; }
+    inline std::uint16_t getUpperLimit(const std::string& place)    const noexcept  { return this->table.at(place)[1]; }
 
 
 
 private:
-    static std::unordered_map<std::string, Pair> table;
+    std::unordered_map<std::string, Pair> table;
 };
 
 
