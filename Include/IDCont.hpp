@@ -1,5 +1,5 @@
-#ifndef _IDENTIFICATION_NUMBER_CONTAINER_HEADER_INCLUDED_
-#define _IDENTIFICATION_NUMBER_CONTAINER_HEADER_INCLUDED_
+#ifndef _ID_CONTAINER_HEADER_INCLUDED_
+#define _ID_CONTAINER_HEADER_INCLUDED_
 
 
 
@@ -16,13 +16,9 @@
 
 
 
-typedef std::array<std::uint16_t, 2> Pair;
-
-
-
-class IdentificationNumberContainer {
+class IDContainer {
 public:
-    IdentificationNumberContainer();
+    IDContainer();
 
 
 
@@ -33,7 +29,7 @@ public:
 
 
 private:
-    std::unordered_map<std::string, Pair> table;
+    std::unordered_map<std::string, std::array<std::uint16_t, 2>> table;
 };
 
 
